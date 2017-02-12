@@ -1,5 +1,4 @@
 use std::thread;
-use std::time::Duration;
 use std::sync::mpsc;
 use std::sync::mpsc::Receiver;
 
@@ -24,9 +23,6 @@ impl ThreadIterator {
 			let tx = tx.clone();
 
 			thread::spawn(move || {
-				//let answer = i;
-
-				//thread::sleep(Duration::from_millis(1000 * i));
 
 				let answer = fib(i + 40);
 
@@ -66,7 +62,7 @@ fn fib(x: i32) -> i32 {
 }
 
 pub fn simple_thread(){
-	let threads : Vec<_> = (0..10).map(|num|{ 
+	let threads: Vec<_> = (0..10).map(|num|{ 
 		thread::spawn(move ||{
 			println!("Hello world! (from thread {})", num);
 		})

@@ -4,7 +4,7 @@ mod myiterator;
 use myiterator::MyIterator;
 
 fn main() {
-
+	
 }
 
 pub fn arr_is_equal<T: PartialEq>(arr1: &[T], arr2: &[T]) -> bool{
@@ -12,23 +12,23 @@ pub fn arr_is_equal<T: PartialEq>(arr1: &[T], arr2: &[T]) -> bool{
 	let mut iter2 = arr2.iter();
 
 	loop {
-	    let val1 = iter1.next();
-	    let val2 = iter2.next();
+		let val1 = iter1.next();
+		let val2 = iter2.next();
 
-	    let has_val1 = val1.is_some();
-	    let has_val2 = val2.is_some();
+		let has_val1 = val1.is_some();
+		let has_val2 = val2.is_some();
 
-	    if !has_val1 && !has_val2 {
-	    	return true;
-	    }
+		if !has_val1 && !has_val2 {
+			return true;
+		}
 
-	    if !has_val1 || !has_val2 {
-	    	return false;
-	    }
+		if !has_val1 || !has_val2 {
+			return false;
+		}
 
-	    if val1.unwrap() != val2.unwrap() {
-	    	return false;
-	    }
+		if val1.unwrap() != val2.unwrap() {
+			return false;
+		}
 	}
 }
 
@@ -36,17 +36,13 @@ pub fn inc(i: &mut i32){
 	*i += 1;
 }
 
-pub fn each<F: Copy, T>(arr: &[T], f: F) where F: FnOnce(&T, u32){
+pub fn each<F, T>(arr: &[T], f: F) where F: Fn(&T, u32){
 	let mut i = 0;
 
 	for e in arr {
-	    f(e,i);
-	    i += 1;
+		f(e,i);
+		i += 1;
 	}
-}
-
-pub fn testfn(x: &mut i32){
-	*x = 0;
 }
 
 pub fn strtest(){
@@ -210,7 +206,7 @@ pub fn linq_fold(){
 }
 
 pub fn linq_collect(){
-	let _vec = (1..1000)
+	let _ = (1..1000)
 	.filter(|&x| x % 2 == 0)
 	.filter(|&x| x % 3 == 0)
 	.take(5)
@@ -225,7 +221,7 @@ pub fn mut_array(){
 	}
 
 	for i in &arr{
-	    println!("{}", i);
+		println!("{}", i);
 	}
 }
 
@@ -242,10 +238,10 @@ pub fn print_arr<T: Display>(arr: &[T]){
 		print!("{}", first.unwrap());
 
 		loop {
-		    match arr.next() {
-		        Some(val) => print!(",{}", val),
-		        None => break,
-		    }
+			match arr.next() {
+				Some(val) => print!(",{}", val),
+				None => break,
+			}
 		}
 
 		println!("");
@@ -253,13 +249,13 @@ pub fn print_arr<T: Display>(arr: &[T]){
 }
 
 pub enum MyResult<T, E> {
-    Ok(T),
-    Err(E),
+	Ok(T),
+	Err(E),
 }
 
 pub enum MyOption<T> {
-    None,
-    Some(T),
+	None,
+	Some(T),
 }
 
 pub fn result_ok_expect(){

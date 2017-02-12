@@ -6,7 +6,7 @@ fn apply<F>(f: F) where F: FnOnce() {
 }
 
 // A function which takes a closure and returns an `i32`.
-fn apply_to<F>(f: F, i: i32) -> i32 where F: FnOnce(i32) -> i32 {
+fn apply_to<F>(f: F, i: i32) -> i32 where F: Fn(i32) -> i32 {
 
     f(i)
 }
@@ -22,12 +22,12 @@ fn main() {
     // `farewell` by value.
     let diary = || {
         // `greeting` is by reference: requires `Fn`.
-        println!("I said {}.", &greeting);
+        println!("I said {}.", greeting);
 
         // Mutation forces `farewell` to be captured by
         // mutable reference. Now requires `FnMut`.
         farewell.push_str("!!!");
-        println!("Then I screamed {}.", &farewell);
+        println!("Then I screamed {}.", farewell);
         println!("Now I can sleep. zzzzz");
 
         // Manually calling drop forces `farewell` to
@@ -38,7 +38,7 @@ fn main() {
     // Call the function which applies the closure.
     apply(diary);
 
-    let double = |x| 2 * x;
+    let double_fn = |x| 2 * x;
 
-    println!("3 doubled: {}", apply_to(double, 3));
+    println!("3 doubled: {}", apply_to(double_fn, 3));
 }

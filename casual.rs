@@ -1,8 +1,25 @@
-//mod codes;
+
 
 fn main(){
-	
-	let x = 3;
+	let var = "deneme";
 
-	let y: *mut i32 = *x;
+	let holder = StrHolder::new(var);
+
+	println!("{}", holder.to_string());
+}
+
+struct StrHolder<'a> {
+    field: &'a str
+}
+
+impl<'a> StrHolder<'a> {
+    fn new(string: &str) -> StrHolder {
+    	StrHolder{
+    		field: string
+    	}
+    }
+
+    fn to_string(&self) -> &'a str{
+    	return self.field;
+    }
 }

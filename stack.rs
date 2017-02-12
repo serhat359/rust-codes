@@ -50,12 +50,16 @@ impl Stack {
 fn main() {
 	let mut st = Stack::new();
 
-	st.push(3);
-	st.push(5);
+    st.push(3);
+    st.push(5);
 
-	println!("{}", st.peek());
+    for x in 1..5000 {
+        st.push(x);
+    }
 
-	st.pop();
+    println!("{}", st.peek());
 
-	println!("{}", st.peek());
+    st.pop();
+
+    println!("{}", st.peek());
 }

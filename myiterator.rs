@@ -2,14 +2,12 @@ use std::slice::Iter;
 
 #[derive(Debug)]
 pub struct MyIterator<'a, T: Copy + 'a> {
-    data: &'a [T],
     iter: Iter<'a, T>
 }
 
 impl<'a, T: Copy> MyIterator<'a, T> {
     pub fn new(arr: &[T]) -> MyIterator<T>{
     	MyIterator{
-    		data: arr,
     		iter: arr.iter()
     	}
     }
