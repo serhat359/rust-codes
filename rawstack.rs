@@ -61,8 +61,7 @@ fn main() {
 
     let mut x: Option<Box<Node>> = st.top;
 
-    while x.is_some() {
-    	let val: Box<Node> = x.expect("");
+    while let Some(val) = x {
     	let n: Node = *val;
     	//print!("{:?},", n.val);
     	x = n.next;

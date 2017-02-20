@@ -4,7 +4,63 @@ mod myiterator;
 use myiterator::MyIterator;
 
 fn main() {
-	
+	let mut x = [5,8,2];
+
+	let printandinc = |x: &mut i32| {
+		println!("{}", x);
+		*x += 1;
+	};
+
+	eachmut(&mut x, |e,_| printandinc(e));
+
+	print_arr(&x);
+	println!();
+
+}
+
+pub fn box_unwrap(){
+	let adder_in_box: Box<Fn() -> i32> = make_adder(3,5);
+
+	let adder = &adder_in_box;
+
+	println!("{}", adder());
+}
+
+pub fn make_adder(a: i32, b: i32) -> Box<Fn() -> i32> {
+	// return closure bu sekilde yapiliyor
+	Box::new(move || a + b)
+}
+
+pub fn print_arr<T: Display>(arr: &[T]){
+	let mut iter = arr.iter();
+
+	print!("{{");
+
+	if let Some(val) = iter.next() {
+		print!("{}", val);
+	}
+
+	while let Some(val) = iter.next() {
+		print!(",{}", val);
+	}
+
+	print!("}}");
+}
+
+pub fn arr_iter_into_iter(){
+	let vec1 = vec![1, 2, 3];
+
+	// `iter()` for vecs yields `&i32`. Destructure to `i32`.
+	println!("2 in vec1: {}", vec1.iter()     .any(|&x| x == 2));
+	// `into_iter()` for vecs yields `i32`. No destructuring required.
+	println!("2 in vec2: {}", vec1.into_iter().any(| x| x == 2));
+
+	let array1 = [1, 2, 3];
+
+	// `iter()` for arrays yields `&i32`.
+	println!("2 in array1: {}", array1.iter()     .any(|&x| x == 2));
+	// `into_iter()` for arrays unusually yields `&i32`.
+	println!("2 in array2: {}", array1.into_iter().any(|&x| x == 2));
 }
 
 pub fn arr_is_equal<T: PartialEq>(arr1: &[T], arr2: &[T]) -> bool{
@@ -45,6 +101,15 @@ pub fn each<F, T>(arr: &[T], f: F) where F: Fn(&T, u32){
 	}
 }
 
+pub fn eachmut<F, T>(arr: &mut [T], mut f: F) where F: FnMut(&mut T, u32){
+	let mut i = 0;
+
+	for e in arr {
+		f(e,i);
+		i += 1;
+	}
+}
+
 pub fn strtest(){
 	let a: String = strreturn();
 
@@ -57,22 +122,22 @@ pub fn strtest(){
 
 fn strreturn() -> String{
 	let resstr: String = "Xhertas".to_string();
-	return resstr;
+	resstr
 }
 
 fn staticstrreturn() -> &'static str{
-	return "Xhertas static";
+	"Xhertas static"
 }
 
 pub fn test_array_iter(){
 	let texts = ["sad","cvsxc","asdas"];
 
 	for s in texts.iter(){
-		printstr(s);
+		printlnstr(s);
 	}
 }
 
-pub fn printstr(x: &str){
+pub fn printlnstr(x: &str){
 	println!("{}", x);
 }
 
@@ -129,15 +194,15 @@ pub fn gcd(x: i32, y: i32) -> i32{
 		small = temp;
 	}
 
-	return big;
+	big
 }
 
 pub fn max(x: i32, y: i32) -> i32{
-	return if x > y { x } else { y };
+	if x > y { x } else { y }
 }
 
 pub fn min(x: i32, y: i32) -> i32{
-	return if x > y { y } else { x };
+	if x > y { y } else { x }
 }
 
 pub fn closure(){
@@ -206,11 +271,14 @@ pub fn linq_fold(){
 }
 
 pub fn linq_collect(){
-	let _ = (1..1000)
+	let _: Vec<i32> = (1..1000)
 	.filter(|&x| x % 2 == 0)
 	.filter(|&x| x % 3 == 0)
 	.take(5)
 	.collect::<Vec<i32>>();
+
+	// vector olusturma boyle
+	let _: Vec<i32> = vec![1, 2, 3];
 }
 
 pub fn mut_array(){
@@ -227,25 +295,6 @@ pub fn mut_array(){
 
 pub fn function<T: Display>(i: T){
 	print!("{}", i);
-}
-
-pub fn print_arr<T: Display>(arr: &[T]){
-	let mut arr = arr.into_iter();
-
-	let first = arr.next();
-
-	if first.is_some() {
-		print!("{}", first.unwrap());
-
-		loop {
-			match arr.next() {
-				Some(val) => print!(",{}", val),
-				None => break,
-			}
-		}
-
-		println!("");
-	}
 }
 
 pub enum MyResult<T, E> {
