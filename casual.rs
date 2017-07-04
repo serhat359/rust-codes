@@ -1,25 +1,19 @@
-
-
 fn main(){
-	let var = "deneme";
+	let num = 6;
 
-	let holder = StrHolder::new(var);
+	let a = make_name(&num);
 
-	println!("{}", holder.to_string());
+	println!("{:?}", a);
+
 }
 
-struct StrHolder<'a> {
-    field: &'a str
+fn make_name(x: &i32) -> Name{
+	let strct = Name { field: &x };
+
+	return strct;
 }
 
-impl<'a> StrHolder<'a> {
-    fn new(string: &str) -> StrHolder {
-    	StrHolder{
-    		field: string
-    	}
-    }
-
-    fn to_string(&self) -> &'a str{
-    	return self.field;
-    }
+#[derive(Debug)]
+struct Name<'a> {
+    field: &'a i32
 }

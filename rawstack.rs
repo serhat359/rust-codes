@@ -1,4 +1,4 @@
-struct Stack {
+pub struct Stack {
     top: Option<Box<Node>>
 }
 
@@ -26,13 +26,8 @@ impl Stack {
     }
 
     pub fn pop(&mut self) -> i32{
-    	let ptr: Box<Node> = if self.top.is_some() {
-    		self.top.take().unwrap()
-    	}
-    	else {
-    	    panic!("The stack is empty")
-    	};
-
+    	let ptr: Box<Node> =  self.top.take().expect("The stack is empty");
+    	
     	let node: Node = *ptr;
 
     	let retval = node.val;

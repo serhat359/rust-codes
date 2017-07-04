@@ -1,6 +1,8 @@
 use std::boxed::Box;
 use std::ops::Deref;
 
+#[deprecated(note="The stack implemented here uses self defined enum Node, which is not optimized by the compiler.
+The code implemented in rawstack.rs is a lot more faster than this code, please use that.")]
 struct Stack {
     top: Node
 }
@@ -57,9 +59,17 @@ fn main() {
         st.push(x);
     }
 
-    println!("{}", st.peek());
+    println!("{}", st.pop());
 
     st.pop();
 
     println!("{}", st.peek());
+
+    let mut x: Node = st.top;
+
+    while let Node::Val(i,ptr) = x {
+        let n: Node = *ptr;
+        //print!("{:?},", i);
+        x = n;
+    }
 }

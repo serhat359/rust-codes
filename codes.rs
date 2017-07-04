@@ -4,6 +4,46 @@ mod myiterator;
 use myiterator::MyIterator;
 
 fn main() {
+
+	let arr = ["asda","klhk","ubuy"];
+
+	print_arr(&arr);
+
+	// the code is over, do not edit!
+	println!();
+}
+
+// 2.3 s on 10000000 loop
+pub fn return_string() -> String{
+	return "aldkjaslkdjlajdlkasjldajklshkjasdjkasdkjagsdhjagsdjhgahdgjasd".to_string();
+}
+
+// 2.2 s on 10000000 loop
+pub fn create_string(){
+	let _ = "aldkjaslkdjlajdlkasjldajklshkjasdjkasdkjagsdhjagsdjhgahdgjasd".to_string();
+}
+
+// 0.55 s on 10000000 loop
+pub fn return_str() -> &'static str{
+	return "aldkjaslkdjlajdlkasjldajklshkjasdjkasdkjagsdhjagsdjhgahdgjasd";
+}
+
+// 0.9 s on 10000000 loop
+pub fn return_strptr(x: &str) -> &str{
+	return &x;
+}
+
+// 0.6 s on 10000000 loop
+pub fn return_strstr(x: String) -> String{
+	return x;
+}
+
+// 10.5 s on 10000000 loop
+pub fn return_strcreate(x: String) -> String{
+	return x.to_string();
+}
+
+pub fn test_array_mut(){
 	let mut x = [5,8,2];
 
 	let printandinc = |x: &mut i32| {
@@ -14,8 +54,6 @@ fn main() {
 	eachmut(&mut x, |e,_| printandinc(e));
 
 	print_arr(&x);
-	println!();
-
 }
 
 pub fn box_unwrap(){
@@ -88,10 +126,6 @@ pub fn arr_is_equal<T: PartialEq>(arr1: &[T], arr2: &[T]) -> bool{
 	}
 }
 
-pub fn inc(i: &mut i32){
-	*i += 1;
-}
-
 pub fn each<F, T>(arr: &[T], f: F) where F: Fn(&T, u32){
 	let mut i = 0;
 
@@ -110,35 +144,12 @@ pub fn eachmut<F, T>(arr: &mut [T], mut f: F) where F: FnMut(&mut T, u32){
 	}
 }
 
-pub fn strtest(){
-	let a: String = strreturn();
-
-	println!("{}", a);
-
-	let b: &str = staticstrreturn();
-
-	println!("{}", b);
-}
-
-fn strreturn() -> String{
-	let resstr: String = "Xhertas".to_string();
-	resstr
-}
-
-fn staticstrreturn() -> &'static str{
-	"Xhertas static"
-}
-
 pub fn test_array_iter(){
 	let texts = ["sad","cvsxc","asdas"];
 
 	for s in texts.iter(){
-		printlnstr(s);
+		println!("{}", s);
 	}
-}
-
-pub fn printlnstr(x: &str){
-	println!("{}", x);
 }
 
 pub fn borrow_check(){
@@ -159,7 +170,7 @@ pub fn match_and_iterator(){
 
 	loop {
 		match range.next() {
-			Some(x) => {
+			Some(ref x) => {
 				println!("{}", x);
 			},
 			None => { break }
