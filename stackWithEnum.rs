@@ -17,36 +17,32 @@ impl Node {
     }
 
     #[warn(unused_must_use)]
-    pub fn peek(self) -> i32{
-    	match self {
+    pub fn peek(&self) -> i32{
+    	match *self {
     	    Node::Cons(val,_) => val,
     	    Node::Nil => panic!("Stack is empty"),
     	}
     }
 }
+use Node::*;
 
-fn main() {
-	use Node::*;
-
+fn main() {	
 	let mut st = Node::new();
 
 	st = st.push(3);
 	st = st.push(5);
 
-	for x in 1..5000 {
+	for x in 1..5000000 {
 	    st = st.push(x);
 	}
 
-	match st {
-	    Cons(val, _) => println!("{}", val),
-	    Nil => {},
-	}
-
-	match st {
-	    Cons(val, _) => println!("{}", val),
-	    Nil => {},
-	}
-
 	println!("{}", st.peek());
+
+	let mut x = st;
+
+	while let Cons(_, next_node) = x {
+        //print!("{:?},", n.val);
+        x = *next_node;
+    }
 
 }

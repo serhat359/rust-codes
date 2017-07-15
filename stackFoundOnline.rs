@@ -95,12 +95,16 @@ fn main() {
     st.push(3);
     st.push(5);
 
-    for x in 1..50000 {
+    for x in 1..5000000 {
         st.push(x);
     }
 
-    for a in st.iter() {
-        //println!("{}", a);
+    let mut x = st.list_head;
+
+    while let Some(val) = x {
+        let n = *val;
+        //print!("{:?},", n.val);
+        x = n.next;
     }
 
 }

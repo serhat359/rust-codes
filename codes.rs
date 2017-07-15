@@ -1,16 +1,21 @@
 use std::io;
 use std::fmt::Display;
-mod myiterator;
 use myiterator::MyIterator;
 
-fn main() {
+#[derive(Debug)]
+pub struct Pair (Box<i32>, Box<i32>);
 
-	let arr = ["asda","klhk","ubuy"];
+pub fn test() {
 
-	print_arr(&arr);
+	let a = 3;
 
-	// the code is over, do not edit!
-	println!();
+	println!("{}", a);
+
+	println!("{}", a);
+	
+
+
+	
 }
 
 // 2.3 s on 10000000 loop
@@ -217,8 +222,8 @@ pub fn min(x: i32, y: i32) -> i32{
 }
 
 pub fn closure(){
-	let printint = |x: i32|{ 
-		println!("{}", x); 
+	let printint = |x: i32|{
+		println!("{}", x);
 	};
 
 	printint(45);
@@ -241,7 +246,7 @@ pub fn string_test(){
 	}
 
 	let mutstr = "Hi";
-	
+
 	let printstr = |x: &str|{ print!("\n{}", x); };
 
 	printstr(mutstr);
@@ -340,5 +345,5 @@ impl<T> MyOption<T> {
 }
 
 pub fn arr_as_iter<A: Copy>(arr: &[A]) -> MyIterator<A> {
-	myiterator::MyIterator::new(arr)
+	MyIterator::new(arr)
 }

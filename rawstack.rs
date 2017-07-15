@@ -44,21 +44,18 @@ fn main() {
     st.push(3);
     st.push(5);
 
-    for x in 1..500000 {
+    for x in 1..5000000 {
         st.push(x);
     }
 
-    println!("{}", st.pop());
-
-    st.pop();
-
-    println!("{}", st.peek());
-
-    let mut x: Option<Box<Node>> = st.top;
+    let mut x = st.top;
 
     while let Some(val) = x {
-    	let n: Node = *val;
-    	//print!("{:?},", n.val);
-    	x = n.next;
+        let n = *val;
+        //print!("{:?},", n.val);
+        x = n.next;
     }
+
+    
+
 }

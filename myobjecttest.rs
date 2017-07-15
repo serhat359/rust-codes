@@ -11,5 +11,6 @@ fn main(){
     //println!("{:?}", x);
 
     x.test_method();
+
 }
 
