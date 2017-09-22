@@ -2,7 +2,9 @@ use std::thread;
 use std::sync::mpsc;
 use std::sync::mpsc::Receiver;
 
-fn main() {
+pub fn test() {
+	println!("Spawning Threads...");
+
 	for i in ThreadIterator::new() {
 		println!("{}", i);
 	}
@@ -23,8 +25,7 @@ impl ThreadIterator {
 			let tx = tx.clone();
 
 			thread::spawn(move || {
-
-				let answer = fib(i + 40);
+				let answer = fib(i + 35);
 
 				tx.send(answer).ok().expect("Error while sending data");
 			});

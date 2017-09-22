@@ -1,17 +1,15 @@
 // A function which takes a closure as an argument and calls it.
 fn apply<F>(f: F) where F: FnOnce() {
     // ^ TODO: Try changing this to `Fn` or `FnMut`.
-
     f()
 }
 
 // A function which takes a closure and returns an `i32`.
 fn apply_to<F>(f: F, i: i32) -> i32 where F: Fn(i32) -> i32 {
-
     f(i)
 }
 
-fn main() {
+pub fn test() {
     use std::mem;
 
     let greeting = "hello";

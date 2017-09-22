@@ -1,4 +1,4 @@
-mod myobject;
+pub mod myobject;
 
 fn main(){
 	let mut x = myobject::MyObject::new("noname", 2);

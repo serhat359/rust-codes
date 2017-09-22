@@ -23,7 +23,7 @@ impl Philosopher {
 
         println!("{} is eating.", self.name);
 
-        std::thread::sleep(Duration::from_millis(1000));
+        thread::sleep(Duration::from_millis(1000));
 
         println!("{} is done eating.", self.name);
     }
@@ -33,7 +33,7 @@ struct Table {
     forks: Vec<Mutex<()>>,
 }
 
-fn main() {
+pub fn test() {
     let table = Arc::new(Table { forks: vec![
         Mutex::new(()),
         Mutex::new(()),

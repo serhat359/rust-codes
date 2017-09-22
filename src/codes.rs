@@ -7,14 +7,7 @@ pub struct Pair (Box<i32>, Box<i32>);
 
 pub fn test() {
 
-	let a = 3;
-
-	println!("{}", a);
-
-	println!("{}", a);
-	
-
-
+	println!("Test Message");
 	
 }
 
