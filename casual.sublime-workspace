@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"time",
+				"timeText"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"pare",
+				"parentElement"
+			],
+			[
+				"player",
+				"playerDiv"
+			],
+			[
+				"item",
+				"itemLength"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"id",
+				"id_int"
+			],
+			[
+				"likec",
+				"likeCountGet"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"img",
+				"imgDiv"
+			],
+			[
+				"new",
+				"newButton"
+			],
+			[
+				"getele",
+				"getElementById"
+			],
+			[
+				"linkP",
+				"linkParts"
+			],
+			[
+				"show",
+				"showMessage"
+			],
+			[
+				"duc",
+				"document"
+			],
+			[
+				"chec",
+				"checkpoint"
+			],
+			[
 				"hid",
 				"hideBottomBar"
 			],
@@ -28,20 +96,12 @@
 				"refresh"
 			],
 			[
-				"for",
-				"for\tfor (…) {…} (Improved Native For-Loop)"
-			],
-			[
 				"list",
 				"list_tail"
 			],
 			[
 				"pr",
 				"print"
-			],
-			[
-				"new",
-				"newNeuron"
 			],
 			[
 				"ac",
@@ -70,10 +130,6 @@
 			[
 				"im",
 				"imgUrl"
-			],
-			[
-				"img",
-				"imgify"
 			],
 			[
 				"art",
@@ -150,10 +206,6 @@
 			[
 				"app",
 				"append"
-			],
-			[
-				"dis",
-				"disLikes"
 			],
 			[
 				"ca",
@@ -260,10 +312,6 @@
 				"expect"
 			],
 			[
-				"parse",
-				"parseResult"
-			],
-			[
 				"mut",
 				"mut_array"
 			],
@@ -304,37 +352,37 @@
 	"buffers":
 	[
 		{
-			"file": "src/codes.rs",
+			"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Knowyourmeme.Fix/Knowyourmeme.Fix.user.js",
 			"settings":
 			{
-				"buffer_size": 6317,
+				"buffer_size": 1659,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Nyaa_Searchbar_Lengthen/Nyaa_Searchbar_Lengthen.user.js",
+			"settings":
+			{
+				"buffer_size": 417,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Xhertas/Documents/youtube filter js codes.js",
+			"settings":
+			{
+				"buffer_size": 900,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/main.rs",
+			"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Youtube_Preview_Fix/Youtube_Preview_Fix.user.js",
 			"settings":
 			{
-				"buffer_size": 262,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/RustEnhanced.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 191,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Xhertas/Documents/my javascript codes.js",
-			"settings":
-			{
-				"buffer_size": 2503,
+				"buffer_size": 9951,
 				"line_ending": "Windows"
 			}
 		}
@@ -688,23 +736,64 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/Rust Enhanced/RustEnhanced.sublime-settings",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Wikia_Image_Fix/Wikia_Image_Fix.user.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/controllers/index.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/controllers/settings.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/controllers/flyout.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/libs/owt.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/libs/strings.js",
+		"/C/Users/Xhertas/Documents/my javascript codes.js",
+		"/C/Users/Xhertas/Documents/sort table javascript.js",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Youtube_Preview_Fix/Youtube_Preview_Fix.user.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/WorldWeatherEN.gadget/controllers/_config.js",
+		"/D/fate-lib/code.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/debug.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/flyout.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/gadget.js",
+		"/C/Users/Xhertas/Downloads/emoji android/sw.js",
+		"/C/Users/Xhertas/Downloads/emoji android/c2runtime.js",
+		"/C/Users/Xhertas/.textadept/init.lua",
+		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/kanji-37.js",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/closure.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/codes.rs",
+		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/concurrency.rs",
+		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/main.rs",
+		"/C/Users/Xhertas/Documents/youtube filter js codes.js",
+		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/radical-layer.js",
+		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/radicals-min.js",
+		"/C/Users/Xhertas/Documents/Visual Studio 2015/Projects/CasualWebSite/SharePointMvc/Scripts/jquery-1.4.1-vsdoc.js",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Anime_News_Network_Visited_Link_Coloring/Anime_News_Network_Visited_Link_Coloring.user.js",
+		"/C/Users/Xhertas/Documents/node_js/example-chat/server.js",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Nyaa_Searchbar_Lengthen/Nyaa_Searchbar_Lengthen.user.js",
+		"/C/Program Files/Xampp/htdocs/youtube playlist download/codes.js",
+		"/C/Users/Xhertas/Documents/fate-lib/code.js",
+		"/C/Users/Xhertas/Documents/workspace/CasualRust/src/main.rs",
+		"/C/Users/Xhertas/Documents/workspace/CasualRust/src/intlist.rs",
+		"/C/Users/Xhertas/Documents/workspace/CasualRust/src/myiterator.rs",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Knowyourmeme.Fix/Knowyourmeme.Fix.user.js",
+		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/WikiwandImageFix/WikiwandImageFix.user.js",
+		"/C/Users/Xhertas/AppData/Local/Temp/Rar$DIa0.702/sw.js",
+		"/C/Users/Xhertas/Documents/social blade script.js",
+		"/C/Users/Xhertas/Downloads/omni.jar folder/chrome/browser/content/browser/bookmarks/sidebarUtils.js",
+		"/C/Users/Xhertas/Downloads/omni.jar folder/chrome/browser/content/browser/bookmarks/bookmarksPanel.js",
+		"/C/Users/Xhertas/Downloads/bookmarksPanel.js",
+		"/C/Program Files/Pale Moon/defaults/pref/channel-prefs.js",
+		"/C/Users/Xhertas/Documents/some source code/javascript code.js",
+		"/C/Users/Xhertas/AppData/Roaming/Mozilla/SeaMonkey/Profiles/0i6os1vc.default/prefs.js",
+		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/settings.js",
+		"/E/Serhat/bilgisayar/Profil Palemoon/Greasemonkey scripts/blockblockadblock/blockblockadblock.user.js",
+		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/RustEnhanced.sublime-settings",
+		"/C/Users/Xhertas/.rustup/source_code/rust-master/src/liballoc/string.rs",
+		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/Rust Enhanced/RustEnhanced.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/RustEnhanced.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/anaconda_rust/AnacondaRUST.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/AnacondaRUST.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/RustAutoComplete/Preferences.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/RustAutoComplete.sublime-settings",
 		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/blockblockadblock/blockblockadblock.user.js",
-		"/C/Users/Xhertas/Downloads/emoji android/c2runtime.js",
-		"/C/Users/Xhertas/Downloads/emoji android/sw.js",
 		"/C/Users/Xhertas/Downloads/emoji android/data.js",
 		"/C/Users/Xhertas/Downloads/emoji android/jquery-2.1.1.min.js",
-		"/C/Users/Xhertas/Documents/my javascript codes.js",
-		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Wikia_Image_Fix/Wikia_Image_Fix.user.js",
 		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Reddit_Fix_Annoyance/Reddit_Fix_Annoyance.user.js",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/casual.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/myobjecttest.rs",
@@ -713,7 +802,6 @@
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/rawstack.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/myiterator.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/stackWithEnum.rs",
-		"/C/Users/Xhertas/Documents/workspace/CasualRust/src/main.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/Cargo.lock",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/stack.rs",
 		"/C/Users/Xhertas/Desktop/Read ULTIMO 0 Online For Free in English  0 - page 1 - Manga Eden_files/page.js",
@@ -725,20 +813,16 @@
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/philosophers.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/external_call.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/lib.rs",
-		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/concurrency.rs",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/library.rlib",
 		"/C/Users/Xhertas/Desktop/cpp code/file.cpp",
-		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/radical-layer.js",
 		"/C/Windows/System32/cero.rs",
 		"/C/Users/Xhertas/Documents/node_js/roms43/server.js",
 		"/C/Users/Xhertas/Desktop/roms43/Download Nintendo 3DS ROMs _ ROMs43.com_files/roms43_images.js",
-		"/C/Users/Xhertas/Documents/node_js/example-chat/server.js",
 		"/C/Users/Xhertas/Desktop/roms43/Download Nintendo 3DS ROMs _ ROMs43.com_files/roms43 images.js",
 		"/C/Users/Xhertas/Documents/node_js/example-empty/server.js",
 		"/C/Users/Xhertas/Desktop/roms43/Download Nintendo 3DS ROMs _ ROMs43.com_files/dataTables.js",
 		"/C/Users/Xhertas/Desktop/roms43/Download Nintendo 3DS ROMs _ ROMs43.com_files/de4995f3-290f-4a72-9e9d-c00d26a1463a.js",
 		"/C/Users/Xhertas/Desktop/roms43/Download Nintendo 3DS ROMs _ ROMs43.com_files/pop.js",
-		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/kanji-37.js",
 		"/C/Users/Xhertas/Documents/node_js/example-chat/jquery-2.2.4.min.js",
 		"/C/Users/Xhertas/Documents/nodejs_files/example-chat/server.js",
 		"/C/Users/Xhertas/Documents/nodejs_files/example-chat/index.html",
@@ -746,25 +830,17 @@
 		"/C/Users/Xhertas/Documents/nodejs_files/chat-example/index.js",
 		"/C/Users/Xhertas/Documents/nodejs_files/main.js",
 		"/C/Users/Xhertas/Documents/nodejs_files/char-example/index.js",
-		"/C/Users/Xhertas/Documents/mymultiradical/Multiradical search at sljfaq.org_files/radicals-min.js",
 		"/C/Program Files/Xampp/htdocs/jquery/jquery-3.0.0.js",
 		"/C/Program Files/Xampp/htdocs/jquery/jquery-2.2.4.js",
 		"/C/Program Files/TeraCopy/sorttable.js",
-		"/C/Users/Xhertas/Documents/sort table javascript.js",
 		"/C/Users/Xhertas/Documents/htmlTemplate/codes.js",
 		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/FixDownloadButton.OpenSubtitles.org/FixDownloadButton.OpenSubtitles.org.user.js",
-		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Youtube_Preview_Fix/Youtube_Preview_Fix.user.js",
-		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Knowyourmeme.Fix/Knowyourmeme.Fix.user.js",
 		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/Currency_DEV.gadget/tr-TR/js/currency.js",
 		"/E/Serhat/bilgisayar/windows gadgets/Yeni klasör/Currency_DEV.Gadget/tr-TR/js/localizedStrings.js",
 		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/Currency_DEV.gadget/tr-TR/js/localizedStrings.js",
 		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/Currency_DEV.gadget/tr-TR/js/service.js",
 		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/Currency_DEV.gadget/tr-TR/js/library.js",
 		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/Currency_DEV.gadget/tr-TR/js/init.js",
-		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/flyout.js",
-		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/gadget.js",
-		"/C/Users/Xhertas/AppData/Local/Microsoft/Windows Sidebar/Gadgets/XRSS.gadget/en-US/scripts/settings.js",
-		"/C/Users/Xhertas/Documents/social blade script.js",
 		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/target/mylinkedlist.rs",
 		"/C/Users/Xhertas/Desktop/crappy bird/Crappy Bird.html",
 		"/C/Users/Xhertas/Documents/htmlTemplate_2/codes.js",
@@ -787,35 +863,7 @@
 		"/C/Users/Xhertas/Desktop/teknobiyotik sipariş_files/jquery-1.js",
 		"/C/Users/Xhertas/Desktop/teknobiyotik sipariş_files/ccard.js",
 		"/C/Users/Xhertas/Desktop/greasemonkey versions/v4/Youtube_Preview_Fix.user.js",
-		"/C/Users/Xhertas/AppData/Roaming/Mozilla/Firefox/Profiles/ze3u29su.default/gm_scripts/Knowyourmeme_Remove_Annoying/Knowyourmeme_Remove_Annoying.user.js",
-		"/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Knowyourmeme_Remove_Annoying/Knowyourmeme_Remove_Annoying.user.js",
-		"/C/Users/Xhertas/AppData/Roaming/Mozilla/Firefox/Profiles/ze3u29su.default/gm_scripts/Youtube_Preview_Fix/Youtube_Preview_Fix.user.js",
-		"/C/Users/Xhertas/Desktop/greasemonkey versions/v3/Youtube_Preview_Fix.user.js",
-		"/C/Program Files/Xampp/htdocs/youtube playlist download/codes.js",
-		"/C/Users/Xhertas/Documents/youtube playlist download/codes.js",
-		"/C/Users/Xhertas/Downloads/BizHawk 1.8.4/Lua/Super Mario World (USA).lua",
-		"/C/Users/Xhertas/Downloads/BizHawk 1.8.4/Lua/mario original.lua",
-		"/C/Users/Xhertas/Downloads/BizHawk 1.8.4/Lua/MovieClock.lua",
-		"/C/Users/Xhertas/workspace/causalua/src/main.lua",
-		"/C/Users/Xhertas/Documents/fast inverse square.cpp",
-		"/C/Users/Xhertas/Downloads/cycloa.js",
-		"/C/Masm615/mul.asm",
-		"/C/Program Files/Xampp/htdocs/spotify.php",
-		"/C/Program Files/Xampp/htdocs/youtubebettersort/search.php",
-		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/target/rawstack.rs",
-		"/C/Users/Xhertas/Documents/Rust Projects/casual/src/nstack.rs",
-		"/C/Users/Xhertas/Desktop/Yeni klasör/rust.rs",
-		"/C/Users/Xhertas/Desktop/Yeni klasör/new.c",
-		"/C/Users/Xhertas/Desktop/Yeni klasör/new.rs",
-		"/C/Users/Xhertas/Desktop/Yeni klasör/Yeni Metin Belgesi.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/test/run-pass/extern-vectorcall.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/libsyntax/util/small_vector.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/test/run-pass/const-enum-vector.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/test/compile-fail/array-not-vector.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/librustc_unicode/lib.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/librustc_unicode/char.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/librustc_llvm/ffi.rs",
-		"/C/Users/Xhertas/Downloads/rust-master/src/libcollections/borrow.rs"
+		"/C/Users/Xhertas/AppData/Roaming/Mozilla/Firefox/Profiles/ze3u29su.default/gm_scripts/Knowyourmeme_Remove_Annoying/Knowyourmeme_Remove_Annoying.user.js"
 	],
 	"find":
 	{
@@ -834,6 +882,63 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"appendChild",
+			"parentElement",
+			"debug",
+			"debugMessage",
+			"debugTitle",
+			"debug",
+			"showMessage",
+			"debug",
+			"Flyout",
+			"showFlyout",
+			"titleLink",
+			"debug",
+			"showf",
+			"feedTitle",
+			"checkpoint",
+			"checkpo",
+			"che",
+			"show",
+			"function show",
+			"mr_update_buttons",
+			"mr_reset_buttons",
+			"mr_show_kanji_list",
+			"mr_button_states",
+			"n_radicals",
+			"getbyid",
+			"mr_push_button",
+			"mr_reset_buttons",
+			"checkpoint",
+			"click",
+			"alert",
+			"create",
+			"each",
+			"apikey",
+			"results_table_columns",
+			"columns",
+			"KanjiResults",
+			"mr_show_kanji_list",
+			"show",
+			"9",
+			"decodeHTML",
+			"getFeedCount",
+			"part",
+			"=>",
+			"checkpoint",
+			"check",
+			"checkpoint",
+			"mr_show_kanji_list",
+			"sendget",
+			"mr_show_kanji_list",
+			"mr_update_buttons",
+			"button_states",
+			"checkpoint",
+			"getbyid",
+			"this",
+			"[",
+			"searchForId",
+			"push_s",
 			"ajaxChangePage",
 			"click",
 			"mem",
@@ -929,104 +1034,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/codes.rs",
+					"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Knowyourmeme.Fix/Knowyourmeme.Fix.user.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6317,
+						"buffer_size": 1659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main.rs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 262,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								103,
-								103
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Xhertas/AppData/Roaming/Sublime Text 3/Packages/User/RustEnhanced.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 191,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								117,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Xhertas/Documents/my javascript codes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2503,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								308,
-								308
+								366,
+								366
 							]
 						],
 						"settings":
@@ -1037,6 +1057,91 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Nyaa_Searchbar_Lengthen/Nyaa_Searchbar_Lengthen.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Xhertas/Documents/youtube filter js codes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Xhertas/AppData/Roaming/Moonchild Productions/Pale Moon/Profiles/ctluhf1x.default/gm_scripts/Youtube_Preview_Fix/Youtube_Preview_Fix.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5346,
+								4728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2115.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 1,
 					"type": "text"
 				}
@@ -1045,7 +1150,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 23.0
 	},
 	"input":
 	{
