@@ -6,7 +6,6 @@ enum Node {
 }
 
 impl Node {
-
     pub fn new() -> Node{
     	Node::Nil
     }
@@ -24,22 +23,22 @@ impl Node {
     	}
     }
 }
-use Node::*;
 
-fn main() {	
+use self::Node::*;
+
+pub fn test() {	
 	let mut st = Node::new();
 
 	st = st.push(3);
 	st = st.push(5);
 
+	let _ = st.peek();
+
 	for x in 1..5000000 {
 	    st = st.push(x);
 	}
 
-	println!("{}", st.peek());
-
 	let mut x = st;
-
 	while let Cons(_, next_node) = x {
         //print!("{:?},", n.val);
         x = *next_node;

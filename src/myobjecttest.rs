@@ -1,7 +1,7 @@
-pub mod myobject;
+use myobject::MyObject;
 
-fn main(){
-	let mut x = myobject::MyObject::new("noname", 2);
+pub fn test(){
+	let mut x = MyObject::new("noname", 2);
 
     x.text = "new text".to_string();
 

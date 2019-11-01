@@ -16,7 +16,7 @@ impl MyString {
 	}
 }
 
-fn main() {
+pub fn test() {
 	let mut x = MyString::from("STRING");
 
 	x.char_array.push(65 as char);

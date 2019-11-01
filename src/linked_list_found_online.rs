@@ -68,7 +68,7 @@ impl<T> List<T> {
 
     /// Provide a forward iterator
     #[inline]
-    pub fn iter<'a>(&'a self) -> ListIterator<'a, T> {
+    pub fn iter(&self) -> ListIterator<T> {
         ListIterator{nelem: self.len(), head: &self.list_head, tail: self.list_tail}
     }
 }
@@ -139,7 +139,7 @@ impl<'a, A> DoubleEndedIterator for ListIterator<'a, A> {
     }
 }
 
-fn main() {
+pub fn test() {
     let mut list: List<i32> = List::new();
 
     list.push_front(3);

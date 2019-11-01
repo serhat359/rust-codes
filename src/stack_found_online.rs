@@ -52,7 +52,7 @@ impl<T> Stack<T> {
 
     /// Provide a forward iterator
     #[inline]
-    pub fn iter<'a>(&'a self) -> ListIterator<'a, T> {
+    pub fn iter(&self) -> ListIterator<T> {
         ListIterator {nelem: self.len(), head: &self.list_head}
     }
 }
@@ -89,7 +89,7 @@ impl<'a, A> Iterator for ListIterator<'a, A> {
     }
 }
 
-fn main() {
+pub fn test() {
     let mut st = Stack::new();
 
     st.push(3);

@@ -8,7 +8,10 @@ pub struct Pair (Box<i32>, Box<i32>);
 pub fn test() {
 
 	println!("Test Message");
-	
+
+	let f: fn(i32) -> i32 = |x| x + 1;
+
+	println!("{}", f(3));
 }
 
 // 2.3 s on 10000000 loop
@@ -55,15 +58,15 @@ pub fn test_array_mut(){
 }
 
 pub fn box_unwrap(){
-	let adder_in_box: Box<Fn() -> i32> = make_adder(3,5);
+	let adder_in_box: Box<dyn Fn() -> i32> = make_adder(3,5);
 
 	let adder = &adder_in_box;
 
 	println!("{}", adder());
 }
 
-pub fn make_adder(a: i32, b: i32) -> Box<Fn() -> i32> {
-	// return closure bu sekilde yapiliyor
+pub fn make_adder(a: i32, b: i32) -> Box<dyn Fn() -> i32> {
+	// returning closure is done like this
 	Box::new(move || a + b)
 }
 
@@ -326,6 +329,30 @@ pub fn result_ok_expect(){
 	let result_value: u32 = result_ok.expect("Error while parsing the string");
 
 	println!("{}", result_value);
+}
+
+fn reverse_string(string: &str) -> String {
+	let byte_size = string.len();
+	let mut new_string_bytes: Vec<u8> = vec![0u8; byte_size];
+
+	let mut index = byte_size;
+	for c in string.chars() {
+		let char_length = c.len_utf8();
+		index -= char_length;
+		let refr: &mut[u8] = new_string_bytes.as_mut_slice();
+		let refr_index: &mut[u8] = &mut refr[index..];
+		c.encode_utf8(refr_index);
+	}
+
+	let x  = String::from_utf8(new_string_bytes);
+
+	return x.expect("Error when creating string");
+}
+
+pub fn test_reverse_string(){
+	let asd3 = reverse_string("this is a long string değil mi gülüm");
+
+	println!("{}", asd3);
 }
 
 impl<T> MyOption<T> {

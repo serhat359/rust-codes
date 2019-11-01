@@ -38,7 +38,7 @@ impl Stack {
     }
 }
 
-fn main() {
+pub fn test() {
     let mut st = Stack::new();
 
     st.push(3);
@@ -49,7 +49,6 @@ fn main() {
     }
 
     let mut x = st.top;
-
     while let Some(val) = x {
         let n = *val;
         //print!("{:?},", n.val);
